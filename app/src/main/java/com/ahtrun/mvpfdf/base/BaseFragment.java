@@ -4,20 +4,19 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.ahtrun.mvpfdf.utils.ToastUtils;
 
-import me.yokeyword.fragmentation.SupportFragment;
-
 /**
  * Author: lhp
  * Date: 2018/2/23
  * Desc:
  */
-public abstract class BaseFragment extends SupportFragment implements BaseView,
+public abstract class BaseFragment extends Fragment implements BaseView,
     View.OnClickListener {
   protected boolean isInit;
   private View rootView;
@@ -40,13 +39,7 @@ public abstract class BaseFragment extends SupportFragment implements BaseView,
     rootView = view;
   }
 
-  @Override
-  public void onLazyInitView(@Nullable Bundle savedInstanceState) {
-    super.onLazyInitView(savedInstanceState);
-    isInit = true;
-    init();
-  }
-
+//
   protected <T extends View> T findViewById(@IdRes int id) {
     return rootView.findViewById(id);
   }
@@ -125,9 +118,6 @@ public abstract class BaseFragment extends SupportFragment implements BaseView,
   public void onClick(View v) {
   }
 
-  @Override
-  public void myFinish() {
-    onBackPressedSupport();
-  }
+
 }
 

@@ -2,7 +2,7 @@ package com.ahtrun.mvpfdf.di.component;
 
 import com.ahtrun.mvpfdf.di.module.ActivityModule;
 import com.ahtrun.mvpfdf.di.scope.ActivityScope;
-import com.ahtrun.mvpfdf.ui.MainActivity;
+import com.ahtrun.mvpfdf.ui.activity.MainActivity;
 
 import dagger.Subcomponent;
 

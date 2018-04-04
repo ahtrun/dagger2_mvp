@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyProject</string>
+    <string name="title_activity_my_fragment">MyFragmentActivity</string>
 </resources>

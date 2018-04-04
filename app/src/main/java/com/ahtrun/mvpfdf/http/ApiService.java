@@ -1,13 +1,5 @@
 package com.ahtrun.mvpfdf.http;
 
-import com.ahtrun.mvpfdf.bean.Version;
-
-import java.util.Map;
-
-import retrofit2.http.POST;
-import retrofit2.http.QueryMap;
-import rx.Observable;
-
 /**
  * <b>类名称：</b> UserService <br/>
  * <b>类描述：</b> <br/>
@@ -21,7 +13,7 @@ import rx.Observable;
 public interface ApiService {
     String BASE_URL = "https://bbc.weinihaigou.com";
 
-    @POST("/version/getVersionSix.shtml")
-    Observable<HttpRespBean<Version>> getVersion(@QueryMap Map<String,Object> params);
+//    @POST("/version/getVersionSix.shtml")
+//    Observable<HttpRespBean<Version>> getVersion(@QueryMap Map<String,Object> params);
 
 }

@@ -247,8 +247,7 @@ public abstract class BaseActivity extends SupportActivity implements BaseView, 
         super.onDestroy();
     }
 
-    protected void initData() {
-    }
+    protected abstract void initData();
 
     protected void initView() {
 //        toolbar = findViewById(R.id.toolbar_base_activity);
